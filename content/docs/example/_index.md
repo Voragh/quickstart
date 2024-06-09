@@ -1,71 +1,53 @@
 ---
 weight: 1
 bookFlatSection: true
-title: "Example Site"
+title: "Come Diventare Ricchi Partendo da Zero"
 ---
 
-# Introduction
+# Come Diventare Ricchi Partendo da Zero
 
-## Ferre hinnitibus erat accipitrem dixi Troiae tollens
+{{< buymecoffee>}}
 
-Lorem markdownum, a quoque nutu est *quodcumque mandasset* veluti. Passim
-inportuna totidemque nympha fert; repetens pendent, poenarum guttura sed vacet
-non, mortali undas. Omnis pharetramque gramen portentificisque membris servatum
-novabis fallit de nubibus atque silvas mihi. **Dixit repetitaque Quid**; verrit
-longa; sententia [mandat](http://pastor-ad.io/questussilvas) quascumque nescio
-solebat [litore](http://lacrimas-ab.net/); noctes. *Hostem haerentem* circuit
-[plenaque tamen](http://www.sine.io/in).
+## Introduzione
 
-- Pedum ne indigenae finire invergens carpebat
-- Velit posses summoque
-- De fumos illa foret
+### Intro
 
-## Est simul fameque tauri qua ad
+Buongiorno a tutti,  
+sono un programmatore di 30 anni che sta provando a raggiungere l'indipendenza finanziaria partendo da zero e ***SENZA SPENDERE SOLDI***.  
+Il mio intento è quello di documentare tutti i passi che ho provato con le rispettive guide per raggiungere questo obiettivo.
 
-Locum nullus nisi vomentes. Ab Persea sermone vela, miratur aratro; eandem
-Argolicas gener.
+### Contesto
 
-## Me sol
+Sono un programmatore sin dalle scuole superiori, sono sempre stato appassionato dei vari linguaggi di programmazione in particolare nella risoluzione dei problemi logici.  
+Attualmente lavoro per una compagnia di consulenza come sviluppatore.
 
-Nec dis certa fuit socer, Nonacria **dies** manet tacitaque sibi? Sucis est
-iactata Castrumque iudex, et iactato quoque terraeque es tandem et maternos
-vittis. Lumina litus bene poenamque animos callem ne tuas in leones illam dea
-cadunt genus, et pleno nunc in quod. Anumque crescentesque sanguinis
-[progenies](http://www.late.net/alimentavirides) nuribus rustica tinguet. Pater
-omnes liquido creditis noctem.
+---
 
-    if (mirrored(icmp_dvd_pim, 3, smbMirroredHard) != lion(clickImportQueue,
-            viralItunesBalancing, bankruptcy_file_pptp)) {
-        file += ip_cybercrime_suffix;
-    }
-    if (runtimeSmartRom == netMarketingWord) {
-        virusBalancingWin *= scriptPromptBespoke + raster(post_drive,
-                windowsSli);
-        cd = address_hertz_trojan;
-        soap_ccd.pcbServerGigahertz(asp_hardware_isa, offlinePeopleware, nui);
-    } else {
-        megabyte.api = modem_flowchart - web + syntaxHalftoneAddress;
-    }
-    if (3 < mebibyteNetworkAnimated) {
-        pharming_regular_error *= jsp_ribbon + algorithm * recycleMediaKindle(
-                dvrSyntax, cdma);
-        adf_sla *= hoverCropDrive;
-        templateNtfs = -1 - vertical;
-    } else {
-        expressionCompressionVariable.bootMulti = white_eup_javascript(
-                table_suffix);
-        guidPpiPram.tracerouteLinux += rtfTerabyteQuicktime(1,
-                managementRosetta(webcamActivex), 740874);
-    }
-    var virusTweetSsl = nullGigo;
+Dopo anni di lavoro mi rendo conto che, nonostante abbia svolto numerosi progetti, non ho un portfolio né in locale né online da visualizzare a causa delle varie formattazioni e della vergogna per la pubblicazione dei miei lavori.  
+Quindi il primo fine di questo ***Blog*** è effettivamente avere uno storico dei miei lavori e come secondo fine farmi pubblicità.
 
-## Trepident sitimque
+---
 
-Sentiet et ferali errorem fessam, coercet superbus, Ascaniumque in pennis
-mediis; dolor? Vidit imi **Aeacon** perfida propositos adde, tua Somni Fluctibus
-errante lustrat non.
+### Obiettivo
 
-Tamen inde, vos videt e flammis Scythica parantem rupisque pectora umbras. Haec
-ficta canistris repercusso simul ego aris Dixit! Esse Fama trepidare hunc
-crescendo vigor ululasse vertice *exspatiantur* celer tepidique petita aversata
-oculis iussa est me ferro.
+Al momento non sono ***Ricco***, ma il mio obiettivo è diventarlo, o almeno provarci. In questo blog documenterò tutti i miei tentativi, condividendo sia i successi che gli insuccessi.  
+
+Vedo molti giovani online che sembrano guadagnare soldi facilmente. Sono un po' scettico e tendo ad avere una mentalità tradizionale: ***nessuno ti regala nulla, bisogna lavorare sodo***.  
+
+Quindi, l'obiettivo di questo blog è capire se è davvero possibile guadagnare soldi facilmente o se bisogna rassegnarsi al duro lavoro. Voglio smascherare i miti dei guadagni facili o, eventualmente, ricredermi e trovare un modo per vivere di rendita.  
+
+Il mio fine ultimo è vivere di rendita. Sono disposto a lavorare molto all'inizio, purché ciò mi permetta di ottenere piccoli ma costanti ritorni economici senza il mio intervento diretto in futuro.  
+
+---
+
+## Donazione
+
+Sei pronto a contribuire alla mia impresa per diventare ***Ricco***?  
+Bene, lascia che ti sveli la mia prima strategia di guadagno: ***le donazioni***.  
+
+---
+
+Esatto, il mio primo passo verso la ricchezza è affidato al supporto finanziario.  
+Non sottovalutare il potere di fare la differenza, ognuno di noi ha il potere di cambiare le cose.  
+
+{{< buymecoffee >}}
