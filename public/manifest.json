@@ -1,0 +1,15 @@
+{
+  "name": "Il Mio Nuovo Sito in Hugo",
+  "short_name": "Il Mio Nuovo Sito in Hugo",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "512x512"
+    }
+  ]
+}

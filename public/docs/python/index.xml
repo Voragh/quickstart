@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on Il Mio Nuovo Sito in Hugo</title>
+    <link>http://localhost:1313/docs/python/</link>
+    <description>Recent content in Python on Il Mio Nuovo Sito in Hugo</description>
+    <generator>Hugo</generator>
+    <language>it-it</language>
+    <lastBuildDate>Thu, 25 May 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/docs/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduzione</title>
+      <link>http://localhost:1313/docs/python/introduzione/</link>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/python/introduzione/</guid>
+      <description>ciao&#xD;#&#xD;come va&#xA;risposta&#xD;#&#xD;tutto bene</description>
+    </item>
+    <item>
+      <title>setup</title>
+      <link>http://localhost:1313/docs/python/setup/</link>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/python/setup/</guid>
+      <description>ciao</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,4 @@
+baseURL = 'https://example.org/'
+languageCode = 'it-it'
+title = 'Il Mio Nuovo Sito in Hugo'
+theme = "hugo-book"
