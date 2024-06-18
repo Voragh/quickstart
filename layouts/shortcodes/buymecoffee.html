@@ -5,53 +5,58 @@
 
 
 {{ $items := slice
-    (dict "text" "Comprami un Caffè" "emoji" "☕" "buttonColor" "6F4E37" "textColor" "FFFFFF")
-    (dict "text" "Comprami un Cappello" "emoji" "🎩" "buttonColor" "696969" "textColor" "FFFFFF")
-    (dict "text" "Comprami un Computer" "emoji" "💻" "buttonColor" "4285F4" "textColor" "FFFFFF")
-    (dict "text" "Comprami un Film" "emoji" "🎬" "buttonColor" "8A2BE2" "textColor" "FFFFFF")
-    (dict "text" "Comprami un Fiore" "emoji" "🌸" "buttonColor" "FF0000" "textColor" "FFFFFF")
-    (dict "text" "Comprami un Gelato" "emoji" "🍦" "buttonColor" "FFD700" "textColor" "000000")
-    (dict "text" "Comprami un Gelato" "emoji" "🍨" "buttonColor" "FF69B4" "textColor" "FFFFFF")
-    (dict "text" "Comprami un Gioco" "emoji" "🎮" "buttonColor" "1E90FF" "textColor" "FFFFFF")
-    (dict "text" "Comprami un Libro di Cucina" "emoji" "📖" "buttonColor" "8B0000" "textColor" "FFFFFF")
-    (dict "text" "Comprami un Libro" "emoji" "📚" "buttonColor" "FFDD00" "textColor" "000000")
-    (dict "text" "Comprami un Panino" "emoji" "🥪" "buttonColor" "FFA500" "textColor" "FFFFFF")
-    (dict "text" "Comprami un Pianoforte" "emoji" "🎹" "buttonColor" "00008B" "textColor" "FFFFFF")
-    (dict "text" "Comprami un Telefono" "emoji" "📱" "buttonColor" "34A853" "textColor" "FFFFFF")
-    (dict "text" "Comprami un Televisore" "emoji" "📺" "buttonColor" "000000" "textColor" "FFFFFF")
-    (dict "text" "Comprami una Batteria" "emoji" "🥁" "buttonColor" "A52A2A" "textColor" "FFFFFF")
-    (dict "text" "Comprami una Bibita" "emoji" "🥤" "buttonColor" "FF4500" "textColor" "FFFFFF")
-    (dict "text" "Comprami una Bicicletta" "emoji" "🚴" "buttonColor" "32CD32" "textColor" "FFFFFF")
-    (dict "text" "Comprami una Birra" "emoji" "🍺" "buttonColor" "FFD700" "textColor" "000000")
-    (dict "text" "Comprami una Borsa" "emoji" "👜" "buttonColor" "B22222" "textColor" "FFFFFF")
-    (dict "text" "Comprami una Candela" "emoji" "🕯️" "buttonColor" "FFD700" "textColor" "000000")
-    (dict "text" "Comprami una Casa" "emoji" "🏠" "buttonColor" "8B4513" "textColor" "FFFFFF")
-    (dict "text" "Comprami una Chitarra" "emoji" "🎸" "buttonColor" "D2691E" "textColor" "FFFFFF")
-    (dict "text" "Comprami una Fotocamera" "emoji" "📷" "buttonColor" "4B0082" "textColor" "FFFFFF")
-    (dict "text" "Comprami una Fotografia" "emoji" "📸" "buttonColor" "FFD700" "textColor" "000000")
-    (dict "text" "Comprami una Frutta" "emoji" "🍉" "buttonColor" "FF6347" "textColor" "FFFFFF")
-    (dict "text" "Comprami una Lampada" "emoji" "💡" "buttonColor" "FFFF00" "textColor" "000000")
-    (dict "text" "Comprami una Luna" "emoji" "🌙" "buttonColor" "A9A9A9" "textColor" "FFFFFF")
-    (dict "text" "Comprami una Macchina" "emoji" "🚗" "buttonColor" "FF4500" "textColor" "FFFFFF")
-    (dict "text" "Comprami una Montagna" "emoji" "🏔️" "buttonColor" "696969" "textColor" "FFFFFF")
-    (dict "text" "Comprami una Nave" "emoji" "🚢" "buttonColor" "000080" "textColor" "FFFFFF")
-    (dict "text" "Comprami una Penna" "emoji" "🖊️" "buttonColor" "00008B" "textColor" "FFFFFF")
-    (dict "text" "Comprami una Pianta" "emoji" "🌿" "buttonColor" "228B22" "textColor" "FFFFFF")
-    (dict "text" "Comprami una Pizza" "emoji" "🍕" "buttonColor" "FF5733" "textColor" "FFFFFF")
-    (dict "text" "Comprami una Radio" "emoji" "📻" "buttonColor" "2F4F4F" "textColor" "FFFFFF")
-    (dict "text" "Comprami una Spiaggia" "emoji" "🏖️" "buttonColor" "FFA500" "textColor" "FFFFFF")
-    (dict "text" "Comprami una Tazza" "emoji" "🍵" "buttonColor" "6B8E23" "textColor" "FFFFFF")
-    (dict "text" "Comprami una Torta" "emoji" "🍰" "buttonColor" "FFB6C1" "textColor" "FFFFFF")
-    (dict "text" "Comprami una Tromba" "emoji" "🎺" "buttonColor" "FFD700" "textColor" "000000")
+(dict "text" "Comprami un Caffè" "emoji" "☕" "buttonColor" "6F4E37" "textColor" "FFFFFF")
+(dict "text" "Comprami un Cappello" "emoji" "🎩" "buttonColor" "696969" "textColor" "FFFFFF")
+(dict "text" "Comprami un Computer" "emoji" "💻" "buttonColor" "4285F4" "textColor" "FFFFFF")
+(dict "text" "Comprami un Film" "emoji" "🎬" "buttonColor" "8A2BE2" "textColor" "FFFFFF")
+(dict "text" "Comprami un Fiore" "emoji" "🌸" "buttonColor" "FF0000" "textColor" "FFFFFF")
+(dict "text" "Comprami un Gelato" "emoji" "🍦" "buttonColor" "FFD700" "textColor" "000000")
+(dict "text" "Comprami un Gelato" "emoji" "🍨" "buttonColor" "FF69B4" "textColor" "FFFFFF")
+(dict "text" "Comprami un Gioco" "emoji" "🎮" "buttonColor" "1E90FF" "textColor" "FFFFFF")
+(dict "text" "Comprami un Libro di Cucina" "emoji" "📖" "buttonColor" "8B0000" "textColor" "FFFFFF")
+(dict "text" "Comprami un Libro" "emoji" "📚" "buttonColor" "FFDD00" "textColor" "000000")
+(dict "text" "Comprami un Panino" "emoji" "🥪" "buttonColor" "FFA500" "textColor" "FFFFFF")
+(dict "text" "Comprami un Pianoforte" "emoji" "🎹" "buttonColor" "00008B" "textColor" "FFFFFF")
+(dict "text" "Comprami un Telefono" "emoji" "📱" "buttonColor" "34A853" "textColor" "FFFFFF")
+(dict "text" "Comprami un Televisore" "emoji" "📺" "buttonColor" "000000" "textColor" "FFFFFF")
+(dict "text" "Comprami una Batteria" "emoji" "🥁" "buttonColor" "A52A2A" "textColor" "FFFFFF")
+(dict "text" "Comprami una Bibita" "emoji" "🥤" "buttonColor" "FF4500" "textColor" "FFFFFF")
+(dict "text" "Comprami una Bicicletta" "emoji" "🚴" "buttonColor" "32CD32" "textColor" "FFFFFF")
+(dict "text" "Comprami una Birra" "emoji" "🍺" "buttonColor" "FFD700" "textColor" "000000")
+(dict "text" "Comprami una Borsa" "emoji" "👜" "buttonColor" "B22222" "textColor" "FFFFFF")
+(dict "text" "Comprami una Candela" "emoji" "🕯️" "buttonColor" "FFD700" "textColor" "000000")
+(dict "text" "Comprami una Casa" "emoji" "🏠" "buttonColor" "8B4513" "textColor" "FFFFFF")
+(dict "text" "Comprami una Chitarra" "emoji" "🎸" "buttonColor" "D2691E" "textColor" "FFFFFF")
+(dict "text" "Comprami una Fotocamera" "emoji" "📷" "buttonColor" "4B0082" "textColor" "FFFFFF")
+(dict "text" "Comprami una Fotografia" "emoji" "📸" "buttonColor" "FFD700" "textColor" "000000")
+(dict "text" "Comprami una Frutta" "emoji" "🍉" "buttonColor" "FF6347" "textColor" "FFFFFF")
+(dict "text" "Comprami una Lampada" "emoji" "💡" "buttonColor" "FFFF00" "textColor" "000000")
+(dict "text" "Comprami una Luna" "emoji" "🌙" "buttonColor" "A9A9A9" "textColor" "FFFFFF")
+(dict "text" "Comprami una Macchina" "emoji" "🚗" "buttonColor" "FF4500" "textColor" "FFFFFF")
+(dict "text" "Comprami una Montagna" "emoji" "🏔️" "buttonColor" "696969" "textColor" "FFFFFF")
+(dict "text" "Comprami una Nave" "emoji" "🚢" "buttonColor" "000080" "textColor" "FFFFFF")
+(dict "text" "Comprami una Penna" "emoji" "🖊️" "buttonColor" "00008B" "textColor" "FFFFFF")
+(dict "text" "Comprami una Pianta" "emoji" "🌿" "buttonColor" "228B22" "textColor" "FFFFFF")
+(dict "text" "Comprami una Pizza" "emoji" "🍕" "buttonColor" "FF5733" "textColor" "FFFFFF")
+(dict "text" "Comprami una Radio" "emoji" "📻" "buttonColor" "2F4F4F" "textColor" "FFFFFF")
+(dict "text" "Comprami una Spiaggia" "emoji" "🏖️" "buttonColor" "FFA500" "textColor" "FFFFFF")
+(dict "text" "Comprami una Tazza" "emoji" "🍵" "buttonColor" "6B8E23" "textColor" "FFFFFF")
+(dict "text" "Comprami una Torta" "emoji" "🍰" "buttonColor" "FFB6C1" "textColor" "FFFFFF")
+(dict "text" "Comprami una Tromba" "emoji" "🎺" "buttonColor" "FFD700" "textColor" "000000")
 }}
 
 
 {{ $shuffled := shuffle $items }}
 {{ $randomItem := index $shuffled 0 }}
 
+<br>
+
 <a href="https://www.buymeacoffee.com/marcomnt19e" target="_blank">
-    <img src='https://img.buymeacoffee.com/button-api/?text={{ $randomItem.text }}&emoji={{ $randomItem.emoji }}&slug=marcomnt19e&button_colour={{ $randomItem.buttonColor}}&font_colour={{ $randomItem.textColor}}&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff' />
+    <img
+        src='https://img.buymeacoffee.com/button-api/?text={{ $randomItem.text }}&emoji={{ $randomItem.emoji }}&slug=marcomnt19e&button_colour={{ $randomItem.buttonColor}}&font_colour={{ $randomItem.textColor}}&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff' />
 </a>
+
+<br>
 
 
 <!--Controllo Elementi
