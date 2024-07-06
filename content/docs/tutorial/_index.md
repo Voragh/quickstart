@@ -1,6 +1,7 @@
 ---
-weight: 200
+weight: 2
 bookFlatSection: true
+bookCollapseSection: true
 title: "Passo 2: Tutorial Vari"
 ---
 
