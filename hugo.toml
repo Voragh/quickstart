@@ -2,3 +2,29 @@ baseURL = 'https://example.org/'
 languageCode = 'it-it'
 title = 'Indipendenza Finanziaria Passo Dopo Passo'
 theme = "hugo-book"
+
+[menu]
+
+  [[menu.sidebar]]
+    name = "Sito"
+    identifier = "sito"
+    url = "/docs/sito/"
+    weight = 1
+
+  [[menu.sidebar]]
+    name = "Tutorial"
+    identifier = "tutorial"
+    url = "/docs/tutorial/"
+    weight = 2
+
+  [[menu.sidebar]]
+    name = "Git"
+    parent = "tutorial"
+    url = "/docs/tutorial/git/"
+    weight = 1
+
+  [[menu.sidebar]]
+    name = "Markdown"
+    parent = "tutorial"
+    url = "/docs/tutorial/markdown/"
+    weight = 2

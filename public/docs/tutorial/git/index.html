@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="it-it" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Guida Completa a Git#Introduzione#In questa guida, esploreremo un caso reale semplificato per analizzare ogni comando di Git e GitLab. Gli strumenti principali utilizzati saranno Git e GitLab.
+Creare un Nuovo Progetto su GitLab#Accedi a GitLab. Crea un nuovo progetto chiamato EsempioGit con visibilità public. Clonare il Progetto su un Computer Locale#Dopo aver creato il progetto, scaricalo in locale posizionandoti nella cartella di riferimento ed eseguendo il comando:">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/docs/tutorial/git/">
+  <meta property="og:site_name" content="Indipendenza Finanziaria Passo Dopo Passo">
+  <meta property="og:title" content="Git">
+  <meta property="og:description" content="Guida Completa a Git#Introduzione#In questa guida, esploreremo un caso reale semplificato per analizzare ogni comando di Git e GitLab. Gli strumenti principali utilizzati saranno Git e GitLab.
+Creare un Nuovo Progetto su GitLab#Accedi a GitLab. Crea un nuovo progetto chiamato EsempioGit con visibilità public. Clonare il Progetto su un Computer Locale#Dopo aver creato il progetto, scaricalo in locale posizionandoti nella cartella di riferimento ed eseguendo il comando:">
+  <meta property="og:locale" content="it_it">
+  <meta property="og:type" content="website">
+<title>Git | Indipendenza Finanziaria Passo Dopo Passo</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" >
+<link rel="canonical" href="http://localhost:1313/docs/tutorial/git/">
+<link rel="stylesheet" href="/book.min.309b7ed028807cdb68d8d61e26d609f48369c098dbf5e4d8c0dcf4cdf49feafc.css" integrity="sha256-MJt&#43;0CiAfNto2NYeJtYJ9INpwJjb9eTYwNz0zfSf6vw=" crossorigin="anonymous">
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.2b6a9622dee73caad95757f0748037bab243ebb2882b11d7e2a3bb73717e0e7c.js" integrity="sha256-K2qWIt7nPKrZV1fwdIA3urJD67KIKxHX4qO7c3F&#43;Dnw=" crossorigin="anonymous"></script>
+
+  
+
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/docs/tutorial/git/index.xml" title="Indipendenza Finanziaria Passo Dopo Passo" />
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>Indipendenza Finanziaria Passo Dopo Passo</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a href="/docs/sito/" class="">Passo 1: Sito Internet</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a href="/docs/tutorial/" class="">Passo 2: Tutorial Vari</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/tutorial/markdown/" class="">Markdown</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/tutorial/git/" class="active">Git</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Git</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduzione">Introduzione</a></li>
+    <li><a href="#creare-un-nuovo-progetto-su-gitlab">Creare un Nuovo Progetto su GitLab</a></li>
+    <li><a href="#clonare-il-progetto-su-un-computer-locale">Clonare il Progetto su un Computer Locale</a></li>
+    <li><a href="#creare-un-file-vuoto">Creare un File Vuoto</a></li>
+    <li><a href="#aggiungere-il-file-al-progetto">Aggiungere il File al Progetto</a></li>
+    <li><a href="#creare-e-gestire-branch">Creare e Gestire Branch</a></li>
+    <li><a href="#unire-branch">Unire Branch</a></li>
+    <li><a href="#gestione-dei-conflitti">Gestione dei Conflitti</a></li>
+    <li><a href="#eliminare-branch-remoti">Eliminare Branch Remoti</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="guida-completa-a-git">
+  Guida Completa a Git
+  <a class="anchor" href="#guida-completa-a-git">#</a>
+</h1>
+
+
+
+
+
+
+
+
+
+
+<br>
+
+<a href="https://www.buymeacoffee.com/marcomnt19e" target="_blank">
+    <img
+        src='https://img.buymeacoffee.com/button-api/?text=Comprami%20un%20Computer&emoji=%f0%9f%92%bb&slug=marcomnt19e&button_colour=4285F4&font_colour=FFFFFF&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff' />
+</a>
+
+<br>
+
+
+
+<h2 id="introduzione">
+  Introduzione
+  <a class="anchor" href="#introduzione">#</a>
+</h2>
+<p>In questa guida, esploreremo un caso reale semplificato per analizzare ogni comando di Git e GitLab. Gli strumenti principali utilizzati saranno <strong>Git</strong> e <strong>GitLab</strong>.</p>
+<h2 id="creare-un-nuovo-progetto-su-gitlab">
+  Creare un Nuovo Progetto su GitLab
+  <a class="anchor" href="#creare-un-nuovo-progetto-su-gitlab">#</a>
+</h2>
+<ol>
+<li>Accedi a <a href="https://gitlab.com/dashboard/projects">GitLab</a>.</li>
+<li>Crea un nuovo progetto chiamato <code>EsempioGit</code> con visibilità <code>public</code>.</li>
+</ol>
+<hr>
+<h2 id="clonare-il-progetto-su-un-computer-locale">
+  Clonare il Progetto su un Computer Locale
+  <a class="anchor" href="#clonare-il-progetto-su-un-computer-locale">#</a>
+</h2>
+<p>Dopo aver creato il progetto, scaricalo in locale posizionandoti nella cartella di riferimento ed eseguendo il comando:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git clone &lt;url-del-progetto&gt;
+</span></span></code></pre></div><ul>
+<li><strong><code>git clone &lt;url-del-progetto&gt;</code></strong>: Questo comando crea una copia locale del repository remoto specificato dall&rsquo;URL.</li>
+</ul>
+<hr>
+<h2 id="creare-un-file-vuoto">
+  Creare un File Vuoto
+  <a class="anchor" href="#creare-un-file-vuoto">#</a>
+</h2>
+<ol>
+<li>Una volta clonato il progetto, noterai che si è creata una cartella con lo stesso nome del progetto remoto.</li>
+<li>Spostati all&rsquo;interno della cartella e noterai che il terminale visualizza <code>(master)</code> accanto al prompt.</li>
+</ol>
+<p>Per creare un file vuoto:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>touch ReadMe.md
+</span></span><span style="display:flex;"><span>ls
+</span></span></code></pre></div><ul>
+<li><strong><code>touch ReadMe.md</code></strong>: Questo comando crea un file vuoto chiamato <code>ReadMe.md</code>.</li>
+<li><strong><code>ls</code></strong>: Questo comando elenca i file presenti nella directory corrente. Dovresti vedere il file <code>ReadMe.md</code> appena creato.</li>
+</ul>
+<p>Il file <code>ReadMe.md</code> conterrà le istruzioni del progetto.</p>
+<hr>
+<h2 id="aggiungere-il-file-al-progetto">
+  Aggiungere il File al Progetto
+  <a class="anchor" href="#aggiungere-il-file-al-progetto">#</a>
+</h2>
+<ol>
+<li>
+<p>Prepara le modifiche della cartella corrente:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git status
+</span></span></code></pre></div><ul>
+<li><strong><code>git status</code></strong>: Questo comando mostra lo stato dei file nel repository. Indica quali file sono stati modificati, aggiunti o eliminati.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git add .
+</span></span></code></pre></div><ul>
+<li><strong><code>git add .</code></strong>: Questo comando aggiunge tutte le modifiche (nuovi file, modifiche ai file esistenti e eliminazioni) all&rsquo;area di staging, preparandole per il commit.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git status
+</span></span></code></pre></div><ul>
+<li>Verifica lo stato dei file per confermare che sono pronti per il commit. I file pronti saranno mostrati in verde.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git reset .
+</span></span></code></pre></div><ul>
+<li><strong><code>git reset .</code></strong>: Questo comando rimuove tutte le modifiche dall&rsquo;area di staging, permettendoti di apportare ulteriori modifiche prima di riprepararle.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git status
+</span></span></code></pre></div><ul>
+<li>Verifica lo stato dei file. Ora i file non saranno più nell&rsquo;area di staging e verranno mostrati in rosso.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git add .
+</span></span></code></pre></div><ul>
+<li>Riprepara tutte le modifiche per il commit.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git status
+</span></span></code></pre></div><ul>
+<li>Verifica nuovamente lo stato dei file. I file pronti saranno mostrati in verde.</li>
+</ul>
+</li>
+<li>
+<p>Crea una commit con una descrizione:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;Primo Commit&#34;</span>
+</span></span></code></pre></div><ul>
+<li><strong><code>git commit -m &quot;Primo Commit&quot;</code></strong>: Questo comando crea una snapshot delle modifiche preparate e le salva nel repository locale con il messaggio di commit &ldquo;Primo Commit&rdquo;.</li>
+</ul>
+</li>
+<li>
+<p>Invia tutto sul repository remoto:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git push origin master
+</span></span></code></pre></div><ul>
+<li><strong><code>git push origin master</code></strong>: Questo comando invia le commit dal repository locale al repository remoto, aggiornando il branch <code>master</code>.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="creare-e-gestire-branch">
+  Creare e Gestire Branch
+  <a class="anchor" href="#creare-e-gestire-branch">#</a>
+</h2>
+<ol>
+<li>
+<p>Crea un nuovo branch per lavorare in autonomia:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git branch
+</span></span></code></pre></div><ul>
+<li><strong><code>git branch</code></strong>: Questo comando elenca tutti i branch esistenti nel repository locale e indica il branch attualmente attivo.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git branch -a
+</span></span></code></pre></div><ul>
+<li><strong><code>git branch -a</code></strong>: Questo comando elenca tutti i branch esistenti sia nel repository locale che remoto.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git branch dev
+</span></span></code></pre></div><ul>
+<li><strong><code>git branch dev</code></strong>: Questo comando crea un nuovo branch chiamato <code>dev</code>.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git branch -a
+</span></span></code></pre></div><ul>
+<li>Verifica nuovamente tutti i branch per confermare la creazione del nuovo branch <code>dev</code>.</li>
+</ul>
+</li>
+<li>
+<p>Spostati sul branch di riferimento:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git checkout dev
+</span></span></code></pre></div><ul>
+<li><strong><code>git checkout dev</code></strong>: Questo comando cambia il branch attivo a <code>dev</code>.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git checkout -b my_branch
+</span></span></code></pre></div><ul>
+<li><strong><code>git checkout -b my_branch</code></strong>: Questo comando crea e cambia il branch attivo a <code>my_branch</code>.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git branch -d dev
+</span></span></code></pre></div><ul>
+<li><strong><code>git branch -d dev</code></strong>: Questo comando elimina il branch <code>dev</code>. Nota: non puoi eliminare il branch attualmente attivo.</li>
+</ul>
+</li>
+</ol>
+<p>Ora sei connesso al branch <code>(my_branch)</code>. Effettua delle modifiche al file:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>nano ReadMe.md
+</span></span></code></pre></div><ul>
+<li><strong><code>nano ReadMe.md</code></strong>: Questo comando apre il file <code>ReadMe.md</code> con l&rsquo;editor di testo <code>nano</code>.</li>
+</ul>
+<p>Scrivi:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span># ReadMe
+</span></span><span style="display:flex;"><span>In questo file si scrive qualcosa dal my_branch
+</span></span></code></pre></div><p>Salva con <code>CTRL + O</code> e esci con <code>CTRL + X</code>.</p>
+<ol start="3">
+<li>
+<p>Visualizza il contenuto del file:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>cat ReadMe.md
+</span></span></code></pre></div><ul>
+<li><strong><code>cat ReadMe.md</code></strong>: Questo comando visualizza il contenuto del file <code>ReadMe.md</code>.</li>
+</ul>
+</li>
+<li>
+<p>Prepara il file, effettua la commit e invia le modifiche:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git add .
+</span></span></code></pre></div><ul>
+<li>Aggiungi tutte le modifiche all&rsquo;area di staging.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;Cambiato il contenuto del file dal my_branch&#34;</span>
+</span></span></code></pre></div><ul>
+<li>Crea una commit con il messaggio &ldquo;Cambiato il contenuto del file dal my_branch&rdquo;.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git push origin my_branch
+</span></span></code></pre></div><ul>
+<li>Invia le modifiche al repository remoto nel branch <code>my_branch</code>.</li>
+</ul>
+</li>
+</ol>
+<p>Ricarica la pagina di GitLab per vedere i branch e le modifiche.</p>
+<hr>
+<h2 id="unire-branch">
+  Unire Branch
+  <a class="anchor" href="#unire-branch">#</a>
+</h2>
+<ol>
+<li>
+<p>Unisci <code>my_branch</code> con <code>master</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git checkout master
+</span></span></code></pre></div><ul>
+<li>Cambia il branch attivo a <code>master</code>.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git pull origin master
+</span></span></code></pre></div><ul>
+<li><strong><code>git pull origin master</code></strong>: Questo comando aggiorna il branch locale <code>master</code> con le modifiche dal repository remoto.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git merge my_branch
+</span></span></code></pre></div><ul>
+<li><strong><code>git merge my_branch</code></strong>: Questo comando unisce le modifiche del branch <code>my_branch</code> nel branch <code>master</code>.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git push origin master
+</span></span></code></pre></div><ul>
+<li>Invia le modifiche unite al repository remoto.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git branch -d my_branch
+</span></span></code></pre></div><ul>
+<li>Elimina il branch <code>my_branch</code>.</li>
+</ul>
+</li>
+</ol>
+<p>Ora il branch <code>master</code> include tutte le modifiche.</p>
+<hr>
+<h2 id="gestione-dei-conflitti">
+  Gestione dei Conflitti
+  <a class="anchor" href="#gestione-dei-conflitti">#</a>
+</h2>
+<ol>
+<li>
+<p>Crea due branch distinti:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git branch dev
+</span></span></code></pre></div><ul>
+<li>Crea un branch chiamato <code>dev</code>.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git branch my_branch
+</span></span></code></pre></div><ul>
+<li>Crea un branch chiamato <code>my_branch</code>.</li>
+</ul>
+</li>
+<li>
+<p>Modifica la stessa riga in entrambi i branch:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git checkout dev
+</span></span></code></pre></div><ul>
+<li>Cambia il branch attivo a <code>dev</code>.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>nano ReadMe.md
+</span></span></code></pre></div><ul>
+<li>Apri il file <code>ReadMe.md</code> con <code>nano</code> e scrivi:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span># ReadMe
+</span></span><span style="display:flex;"><span>In questo file si scrive qualcosa dal Dev
+</span></span></code></pre></div><p>Salva e chiudi <code>nano</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git add .
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;Modificato il file da Dev&#34;</span>
+</span></span><span style="display:flex;"><span>git push origin dev
+</span></span></code></pre></div><ul>
+<li>Prepara le modifiche, crea una commit e invia al repository remoto.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git checkout my_branch
+</span></span></code></pre></div><ul>
+<li>Cambia il branch attivo a <code>my_branch</code>.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>nano ReadMe.md
+</span></span></code></pre></div><ul>
+<li>Apri il file <code>ReadMe.md</code> con <code>nano</code> e scrivi:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span># ReadMe
+</span></span><span style="display:flex;"><span>In questo file si RI - scrive qualcosa dal MyBranch
+</span></span></code></pre></div><p>Salva e chiudi <code>nano</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git add .
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;Modificato il file da MyBranch&#34;</span>
+</span></span><span style="display:flex;"><span>git push origin my_branch
+</span></span></code></pre></div><ul>
+<li>Prepara le modifiche, crea una commit e invia al repository remoto.</li>
+</ul>
+</li>
+<li>
+<p>Effettua la merge dei branch:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git checkout master
+</span></span><span style="display:flex;"><span>git pull origin master
+</span></span><span style="display:flex;"><span>git merge dev
+</span></span><span style="display:flex;"><span>git push origin master
+</span></span><span style="display:flex;"><span>git branch -d dev
+</span></span></code></pre></div><ul>
+<li>Cambia il branch attivo a <code>master</code>, aggiorna <code>master</code> con le modifiche dal repository remoto, unisci <code>dev</code> a <code>master</code>, invia le modifiche e elimina il branch <code>dev</code>.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git checkout master
+</span></span><span style="display:flex;"><span>git pull origin master
+</span></span><span style="display:flex;"><span>git merge my_branch
+</span></span></code></pre></div><ul>
+<li>Cambia il branch attivo a <code>master</code>, aggiorna <code>master</code> con le modifiche dal repository remoto e unisci <code>my_branch</code> a <code>master</code>.</li>
+</ul>
+</li>
+</ol>
+<p>Se ci</p>
+<p>sono conflitti, Git lo segnalerà. Apri il file con <code>nano</code> e risolvi il conflitto:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span># ReadMe
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&lt;&lt;&lt;&lt;&lt;&lt;</span>&lt; <span style="color:#f92672">HEAD</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">In</span> <span style="color:#a6e22e">questo</span> <span style="color:#a6e22e">file</span> <span style="color:#a6e22e">si</span> <span style="color:#a6e22e">scrive</span> <span style="color:#a6e22e">qualcosa</span> <span style="color:#a6e22e">dal</span> <span style="color:#a6e22e">Dev
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e"></span><span style="color:#f92672">=</span><span style="color:#e6db74">======</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">In</span> <span style="color:#a6e22e">questo</span> <span style="color:#a6e22e">file</span> <span style="color:#a6e22e">si</span> <span style="color:#a6e22e">Ri</span> <span style="color:#a6e22e">-</span> <span style="color:#a6e22e">scrive</span> <span style="color:#a6e22e">qualcosa</span> <span style="color:#a6e22e">dal</span> <span style="color:#a6e22e">MyBranch</span>
+</span></span><span style="display:flex;"><span>&gt;&gt;&gt;&gt;&gt;&gt;&gt; my_branch
+</span></span></code></pre></div><p>Modifica il file come desiderato, salva e chiudi <code>nano</code>.</p>
+<ol start="4">
+<li>
+<p>Prepara le modifiche, effettua la commit e pubblica:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git add .
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;Merge con Conflitto&#34;</span>
+</span></span><span style="display:flex;"><span>git push origin master
+</span></span><span style="display:flex;"><span>git branch -d my_branch
+</span></span></code></pre></div><ul>
+<li>Prepara le modifiche, crea una commit con il messaggio &ldquo;Merge con Conflitto&rdquo;, invia le modifiche al repository remoto e elimina il branch <code>my_branch</code>.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="eliminare-branch-remoti">
+  Eliminare Branch Remoti
+  <a class="anchor" href="#eliminare-branch-remoti">#</a>
+</h2>
+<p>Quando hai finito di usare un branch, è buona norma eliminarlo per evitare confusione:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git branch -a
+</span></span></code></pre></div><ul>
+<li>Elenca tutti i branch esistenti sia nel repository locale che remoto.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git push origin --delete dev
+</span></span></code></pre></div><ul>
+<li><strong><code>git push origin --delete dev</code></strong>: Questo comando elimina il branch <code>dev</code> dal repository remoto.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git push origin --delete my_branch
+</span></span></code></pre></div><ul>
+<li>Elimina il branch <code>my_branch</code> dal repository remoto.</li>
+</ul>
+<p>In questo modo rimarrà solo il branch <code>master</code>.</p>
+<hr>
+
+
+
+
+
+
+
+
+
+
+<br>
+
+<a href="https://www.buymeacoffee.com/marcomnt19e" target="_blank">
+    <img
+        src='https://img.buymeacoffee.com/button-api/?text=Comprami%20un%20Libro%20di%20Cucina&emoji=%f0%9f%93%96&slug=marcomnt19e&button_colour=8B0000&font_colour=FFFFFF&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff' />
+</a>
+
+<br>
+
+
+
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduzione">Introduzione</a></li>
+    <li><a href="#creare-un-nuovo-progetto-su-gitlab">Creare un Nuovo Progetto su GitLab</a></li>
+    <li><a href="#clonare-il-progetto-su-un-computer-locale">Clonare il Progetto su un Computer Locale</a></li>
+    <li><a href="#creare-un-file-vuoto">Creare un File Vuoto</a></li>
+    <li><a href="#aggiungere-il-file-al-progetto">Aggiungere il File al Progetto</a></li>
+    <li><a href="#creare-e-gestire-branch">Creare e Gestire Branch</a></li>
+    <li><a href="#unire-branch">Unire Branch</a></li>
+    <li><a href="#gestione-dei-conflitti">Gestione dei Conflitti</a></li>
+    <li><a href="#eliminare-branch-remoti">Eliminare Branch Remoti</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

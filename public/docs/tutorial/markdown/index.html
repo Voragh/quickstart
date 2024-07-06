@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="it-it" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Guida Completa al Markdown#Markdown è un linguaggio di markup leggero che permette di formattare testo semplice in modo semplice ed intuitivo.
+Viene ampiamente utilizzato su piattaforme come GitHub, Reddit e nei file README.
+Testo#Grassetto#Per rendere il testo in grassetto, racchiudilo tra due coppie di asterischi (**) o trattini bassi (__).
+**Questo testo è in grassetto** __Anche questo testo è in grassetto__ Questo testo è in grassetto">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/docs/tutorial/markdown/">
+  <meta property="og:site_name" content="Indipendenza Finanziaria Passo Dopo Passo">
+  <meta property="og:title" content="Markdown">
+  <meta property="og:description" content="Guida Completa al Markdown#Markdown è un linguaggio di markup leggero che permette di formattare testo semplice in modo semplice ed intuitivo.
+Viene ampiamente utilizzato su piattaforme come GitHub, Reddit e nei file README.
+Testo#Grassetto#Per rendere il testo in grassetto, racchiudilo tra due coppie di asterischi (**) o trattini bassi (__).
+**Questo testo è in grassetto** __Anche questo testo è in grassetto__ Questo testo è in grassetto">
+  <meta property="og:locale" content="it_it">
+  <meta property="og:type" content="website">
+<title>Markdown | Indipendenza Finanziaria Passo Dopo Passo</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" >
+<link rel="canonical" href="http://localhost:1313/docs/tutorial/markdown/">
+<link rel="stylesheet" href="/book.min.309b7ed028807cdb68d8d61e26d609f48369c098dbf5e4d8c0dcf4cdf49feafc.css" integrity="sha256-MJt&#43;0CiAfNto2NYeJtYJ9INpwJjb9eTYwNz0zfSf6vw=" crossorigin="anonymous">
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.2b6a9622dee73caad95757f0748037bab243ebb2882b11d7e2a3bb73717e0e7c.js" integrity="sha256-K2qWIt7nPKrZV1fwdIA3urJD67KIKxHX4qO7c3F&#43;Dnw=" crossorigin="anonymous"></script>
+
+  
+
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/docs/tutorial/markdown/index.xml" title="Indipendenza Finanziaria Passo Dopo Passo" />
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>Indipendenza Finanziaria Passo Dopo Passo</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a href="/docs/sito/" class="">Passo 1: Sito Internet</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a href="/docs/tutorial/" class="">Passo 2: Tutorial Vari</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/tutorial/markdown/" class="active">Markdown</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/tutorial/git/" class="">Git</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Markdown</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#testo">Testo</a>
+      <ul>
+        <li><a href="#grassetto">Grassetto</a></li>
+        <li><a href="#corsivo">Corsivo</a></li>
+        <li><a href="#barrato">Barrato</a></li>
+      </ul>
+    </li>
+    <li><a href="#titoli">Titoli</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#titolo-2">Titolo 2</a>
+      <ul>
+        <li><a href="#titolo-3">Titolo 3</a></li>
+      </ul>
+    </li>
+    <li><a href="#liste">Liste</a>
+      <ul>
+        <li><a href="#liste-non-ordinate">Liste Non Ordinate</a></li>
+        <li><a href="#liste-ordinate">Liste Ordinate</a></li>
+        <li><a href="#liste-annidate">Liste Annidate</a></li>
+      </ul>
+    </li>
+    <li><a href="#link">Link</a></li>
+    <li><a href="#immagini">Immagini</a></li>
+    <li><a href="#codice">Codice</a>
+      <ul>
+        <li><a href="#inline">Inline</a></li>
+        <li><a href="#blocco-di-codice">Blocco di Codice</a></li>
+      </ul>
+    </li>
+    <li><a href="#citazioni">Citazioni</a></li>
+    <li><a href="#tabelle">Tabelle</a></li>
+    <li><a href="#linea-orizzontale">Linea Orizzontale</a></li>
+    <li><a href="#checklist">Checklist</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="guida-completa-al-markdown">
+  Guida Completa al Markdown
+  <a class="anchor" href="#guida-completa-al-markdown">#</a>
+</h1>
+
+
+
+
+
+
+
+
+
+
+<br>
+
+<a href="https://www.buymeacoffee.com/marcomnt19e" target="_blank">
+    <img
+        src='https://img.buymeacoffee.com/button-api/?text=Comprami%20una%20Fotografia&emoji=%f0%9f%93%b8&slug=marcomnt19e&button_colour=FFD700&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff' />
+</a>
+
+<br>
+
+
+
+<p>Markdown è un linguaggio di markup leggero che permette di formattare testo semplice in modo semplice ed intuitivo.<br>
+Viene ampiamente utilizzato su piattaforme come GitHub, Reddit e nei file README.</p>
+<h2 id="testo">
+  Testo
+  <a class="anchor" href="#testo">#</a>
+</h2>
+<h3 id="grassetto">
+  Grassetto
+  <a class="anchor" href="#grassetto">#</a>
+</h3>
+<p>Per rendere il testo in grassetto, racchiudilo tra due coppie di asterischi (<code>**</code>) o trattini bassi (<code>__</code>).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>**Questo testo è in grassetto**
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">__Anche questo testo è in grassetto__</span>
+</span></span></code></pre></div><p><strong>Questo testo è in grassetto</strong><br>
+<strong>Anche questo testo è in grassetto</strong></p>
+<h3 id="corsivo">
+  Corsivo
+  <a class="anchor" href="#corsivo">#</a>
+</h3>
+<p>Per il testo in corsivo, usa una singola coppia di asterischi (<code>*</code>) o trattini bassi (<code>_</code>).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>*Questo testo è in corsivo*
+</span></span><span style="display:flex;"><span><span style="font-style:italic">_Anche questo testo è in corsivo_</span>
+</span></span></code></pre></div><p><em>Questo testo è in corsivo</em><br>
+<em>Anche questo testo è in corsivo</em></p>
+<h3 id="barrato">
+  Barrato
+  <a class="anchor" href="#barrato">#</a>
+</h3>
+<p>Per il testo barrato, racchiudilo tra due coppie di tilde (<code>~~</code>).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>~~Questo testo è barrato~~
+</span></span></code></pre></div><p><del>Questo testo è barrato</del></p>
+<h2 id="titoli">
+  Titoli
+  <a class="anchor" href="#titoli">#</a>
+</h2>
+<p>Per creare titoli, utilizza il carattere cancelletto (<code>#</code>). La quantità di cancelletti determina il livello del titolo.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span># Titolo 1
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## Titolo 2
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">### Titolo 3
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#### Titolo 4
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">##### Titolo 5
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">###### Titolo 6
+</span></span></span></code></pre></div><h1 id="titolo-1">
+  Titolo 1
+  <a class="anchor" href="#titolo-1">#</a>
+</h1>
+<h2 id="titolo-2">
+  Titolo 2
+  <a class="anchor" href="#titolo-2">#</a>
+</h2>
+<h3 id="titolo-3">
+  Titolo 3
+  <a class="anchor" href="#titolo-3">#</a>
+</h3>
+<h4 id="titolo-4">
+  Titolo 4
+  <a class="anchor" href="#titolo-4">#</a>
+</h4>
+<h5 id="titolo-5">
+  Titolo 5
+  <a class="anchor" href="#titolo-5">#</a>
+</h5>
+<h6 id="titolo-6">
+  Titolo 6
+  <a class="anchor" href="#titolo-6">#</a>
+</h6>
+<h2 id="liste">
+  Liste
+  <a class="anchor" href="#liste">#</a>
+</h2>
+<h3 id="liste-non-ordinate">
+  Liste Non Ordinate
+  <a class="anchor" href="#liste-non-ordinate">#</a>
+</h3>
+<p>Usa asterischi (<code>*</code>), segni più (<code>+</code>) o trattini (<code>-</code>) per creare liste non ordinate.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span><span style="color:#66d9ef">*</span> Elemento 1
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">*</span> Elemento 2
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">*</span> Sottoelemento 2.1
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">*</span> Sottoelemento 2.2
+</span></span><span style="display:flex;"><span>+ Elemento 3
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Elemento 4
+</span></span></code></pre></div><ul>
+<li>Elemento 1</li>
+<li>Elemento 2
+<ul>
+<li>Sottoelemento 2.1</li>
+<li>Sottoelemento 2.2</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Elemento 3</li>
+</ul>
+<ul>
+<li>Elemento 4</li>
+</ul>
+<h3 id="liste-ordinate">
+  Liste Ordinate
+  <a class="anchor" href="#liste-ordinate">#</a>
+</h3>
+<p>Per le liste ordinate, utilizza i numeri seguiti da un punto (<code>1.</code>).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span><span style="color:#66d9ef">1.</span> Primo elemento
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">2.</span> Secondo elemento
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">1.</span> Sottoelemento 2.1
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">2.</span> Sottoelemento 2.2
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">3.</span> Terzo elemento
+</span></span></code></pre></div><ol>
+<li>Primo elemento</li>
+<li>Secondo elemento
+<ol>
+<li>Sottoelemento 2.1</li>
+<li>Sottoelemento 2.2</li>
+</ol>
+</li>
+<li>Terzo elemento</li>
+</ol>
+<h3 id="liste-annidate">
+  Liste Annidate
+  <a class="anchor" href="#liste-annidate">#</a>
+</h3>
+<p>Puoi creare liste annidate indentando gli elementi con quattro spazi o un tab.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span><span style="color:#66d9ef">1.</span> Primo elemento
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">2.</span> Secondo elemento
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">*</span> Sottoelemento 2.1
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">*</span> Sottoelemento 2.2
+</span></span></code></pre></div><ol>
+<li>Primo elemento</li>
+<li>Secondo elemento
+<ul>
+<li>Sottoelemento 2.1</li>
+<li>Sottoelemento 2.2</li>
+</ul>
+</li>
+</ol>
+<h2 id="link">
+  Link
+  <a class="anchor" href="#link">#</a>
+</h2>
+<p>Per creare un link, usa la seguente sintassi:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>[<span style="color:#f92672">Nome del link</span>](<span style="color:#a6e22e">URL</span>)
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>[<span style="color:#f92672">Google</span>](<span style="color:#a6e22e">https://www.google.com</span>)
+</span></span></code></pre></div><p><a href="https://www.google.com">Google</a></p>
+<h2 id="immagini">
+  Immagini
+  <a class="anchor" href="#immagini">#</a>
+</h2>
+<p>Per aggiungere un&rsquo;immagine, usa un punto esclamativo (<code>!</code>) seguito dal testo alternativo racchiuso tra parentesi quadre e l&rsquo;URL dell&rsquo;immagine tra parentesi tonde.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>![<span style="color:#f92672">Testo Alternativo</span>](<span style="color:#a6e22e">URL</span>)
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>![<span style="color:#f92672">Esempio di Immagine</span>](<span style="color:#a6e22e">https://www.example.com/immagine.png</span>)
+</span></span></code></pre></div><p><img src="https://www.example.com/immagine.png" alt="Esempio di Immagine" /></p>
+<h2 id="codice">
+  Codice
+  <a class="anchor" href="#codice">#</a>
+</h2>
+<h3 id="inline">
+  Inline
+  <a class="anchor" href="#inline">#</a>
+</h3>
+<p>Per inserire codice inline, racchiudilo tra backtick (`).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Utilizza il comando <span style="color:#e6db74">`npm install`</span> per installare i pacchetti.
+</span></span></code></pre></div><p>Utilizza il comando <code>npm install</code> per installare i pacchetti.</p>
+<h3 id="blocco-di-codice">
+  Blocco di Codice
+  <a class="anchor" href="#blocco-di-codice">#</a>
+</h3>
+<p>Per blocchi di codice, usa tre backtick (```) prima e dopo il codice. Puoi anche specificare il linguaggio per evidenziazione della sintassi.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>\```
+</span></span><span style="display:flex;"><span>function esempio() {
+</span></span><span style="display:flex;"><span>    console.log(&#34;Ciao, mondo!&#34;);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>\```
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">esempio</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Ciao, mondo!&#34;</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="citazioni">
+  Citazioni
+  <a class="anchor" href="#citazioni">#</a>
+</h2>
+<p>Per creare una citazione, usa il simbolo di maggiore (<code>&gt;</code>).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span><span style="color:#66d9ef">&gt; </span><span style="font-style:italic">Questo è un testo citato.
+</span></span></span></code></pre></div><blockquote>
+<p>Questo è un testo citato.</p>
+</blockquote>
+<h2 id="tabelle">
+  Tabelle
+  <a class="anchor" href="#tabelle">#</a>
+</h2>
+<p>Per creare tabelle, utilizza trattini (<code>-</code>) per la riga di intestazione e pipe (<code>|</code>) per separare le colonne.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>| Intestazione 1 | Intestazione 2 |
+</span></span><span style="display:flex;"><span>| -------------- | -------------- |
+</span></span><span style="display:flex;"><span>| Riga 1 Colonna 1 | Riga 1 Colonna 2 |
+</span></span><span style="display:flex;"><span>| Riga 2 Colonna 1 | Riga 2 Colonna 2 |
+</span></span></code></pre></div><table>
+<thead>
+<tr>
+<th>Intestazione 1</th>
+<th>Intestazione 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Riga 1 Colonna 1</td>
+<td>Riga 1 Colonna 2</td>
+</tr>
+<tr>
+<td>Riga 2 Colonna 1</td>
+<td>Riga 2 Colonna 2</td>
+</tr>
+</tbody>
+</table>
+<h2 id="linea-orizzontale">
+  Linea Orizzontale
+  <a class="anchor" href="#linea-orizzontale">#</a>
+</h2>
+<p>Per creare una linea orizzontale, usa tre o più asterischi (<code>***</code>), trattini (<code>---</code>) o underscore (<code>___</code>).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>***
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span>___
+</span></span></code></pre></div><hr>
+<h2 id="checklist">
+  Checklist
+  <a class="anchor" href="#checklist">#</a>
+</h2>
+<p>Per creare una checklist, usa trattini seguiti da parentesi quadre. Puoi inserire una <code>x</code> per indicare un elemento completato.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span><span style="color:#66d9ef">- [ ]</span> Da fare
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">- [x]</span> Fatto
+</span></span></code></pre></div><ul>
+<li><input disabled="" type="checkbox"> Da fare</li>
+<li><input checked="" disabled="" type="checkbox"> Fatto</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+<br>
+
+<a href="https://www.buymeacoffee.com/marcomnt19e" target="_blank">
+    <img
+        src='https://img.buymeacoffee.com/button-api/?text=Comprami%20un%20Libro&emoji=%f0%9f%93%9a&slug=marcomnt19e&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff' />
+</a>
+
+<br>
+
+
+
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#testo">Testo</a>
+      <ul>
+        <li><a href="#grassetto">Grassetto</a></li>
+        <li><a href="#corsivo">Corsivo</a></li>
+        <li><a href="#barrato">Barrato</a></li>
+      </ul>
+    </li>
+    <li><a href="#titoli">Titoli</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#titolo-2">Titolo 2</a>
+      <ul>
+        <li><a href="#titolo-3">Titolo 3</a></li>
+      </ul>
+    </li>
+    <li><a href="#liste">Liste</a>
+      <ul>
+        <li><a href="#liste-non-ordinate">Liste Non Ordinate</a></li>
+        <li><a href="#liste-ordinate">Liste Ordinate</a></li>
+        <li><a href="#liste-annidate">Liste Annidate</a></li>
+      </ul>
+    </li>
+    <li><a href="#link">Link</a></li>
+    <li><a href="#immagini">Immagini</a></li>
+    <li><a href="#codice">Codice</a>
+      <ul>
+        <li><a href="#inline">Inline</a></li>
+        <li><a href="#blocco-di-codice">Blocco di Codice</a></li>
+      </ul>
+    </li>
+    <li><a href="#citazioni">Citazioni</a></li>
+    <li><a href="#tabelle">Tabelle</a></li>
+    <li><a href="#linea-orizzontale">Linea Orizzontale</a></li>
+    <li><a href="#checklist">Checklist</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

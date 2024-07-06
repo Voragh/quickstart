@@ -1,5 +1,5 @@
 ---
-weight: 1
+weight: 100
 bookFlatSection: true
 title: "Passo 1: Sito Internet"
 ---
@@ -30,7 +30,7 @@ L'analisi effettuata per scegliere come effettuare il sito è ricaduta su due al
 
 - **Sicurezza**: I siti generati con Hugo sono intrinsecamente più sicuri poiché non ci sono esecuzioni lato server o database. WordPress, essendo dinamico, è più vulnerabile agli attacchi e richiede aggiornamenti regolari per mantenere la sicurezza.  
 
-- **Scalabilità**: I siti statici generati da Hugo sono altamente scalabili e possono essere facilmente distribuiti su CDN. WordPress può diventare lento e problematico quando il traffico e il numero di contenuti crescono significativamente.  
+- **Scalabilità**: I siti statici generati da Hugo sono altamente scalabili e possono essere facilmente distribuiti su CDN (Content Distribution Network ossia delle reti di distribuzione dei contenuti). WordPress può diventare lento e problematico quando il traffico e il numero di contenuti crescono significativamente.  
 
 - **Temi e plugin**: WordPress ha un vasto ecosistema di temi e plugin che permettono di estendere le funzionalità del sito. Hugo offre temi e una certa quantità di plugin, ma la personalizzazione può richiedere più interventi manuali.  
 
@@ -92,7 +92,7 @@ Questo è particolarmente importante per chi, come me, vuole evitare problemi di
 Uno dei motivi principali per cui ho scelto Hugo è il linguaggio di programmazione.  
 Hugo è scritto in Go (Golang), un linguaggio che apprezzo molto per la sua efficienza e le sue performance.  
 Go è utilizzato in progetti importanti come Docker e Kubernetes, il che dimostra la sua potenza e affidabilità.  
-Al contrario, WordPress è basato su PHP, un linguaggio che considero obsoleto e che non mi piace utilizzare nonostante sia uno dei linguaggi più utilizzati.  
+Al contrario, WordPress è basato su PHP, un linguaggio che considero obsoleto e che non mi piace utilizzare nonostante sia uno dei linguaggi più utilizzati sul web.  
 
 ---
 
@@ -115,7 +115,7 @@ Non ho bisogno di interfacce complesse o di numerose funzionalità avanzate; vog
 
 Utilizzando Hugo e GitHub Pages, i costi di hosting del mio sito sono pari a zero.  
 Questa è una grande vantaggio rispetto a WordPress, che può richiedere spese aggiuntive per hosting e plugin.  
-E visto che voglio investire solo i soldi guadagnati seguendo questo progetto, vuol dire che è ottimo per avere una pagina web di partenza.  
+E visto che voglio investire solo i soldi guadagnati seguendo questo progetto, vuol dire che è ottimo per avere un sito web di partenza.  
 
 ---
 
@@ -139,6 +139,7 @@ Per l'installazione potete seguire le indicazioni dettagliate sulla pagina uffic
 Gli strumenti utilizzati sono:  
 - **Terminale** o **Powershell**
 - Editor di testo, nel mio caso **Visual Studio Code**  
+- Git ed Github per tenere traccia del sito e poterlo pubblicare 
 
 Verifichiamo che Hugo sia stato installato con successo, aprendo il **Terminale** su Linux o Mac, oppure aprendo la **Powershell** su Windows e scriviamo il comando:  
 
@@ -185,7 +186,7 @@ git submodule add https://github.com/alex-shpak/hugo-book themes/hugo-book
 
 ### Passo 5: Configurare il tema nel file di configurazione
 
-Arrivati a questo punto bisogna configurare il tema, e per farlo basta aprire il file **hugo.toml** e aggiungere o sostituire il seguente rigo:
+Arrivati a questo punto bisogna configurare il tema, e per farlo basta aprire il file di configurazione **hugo.toml** e aggiungere o sostituire il seguente rigo:
 
 ```toml
 theme = "hugo-book"
@@ -213,6 +214,6 @@ Avvia il server di sviluppo per vedere il sito in azione:
 ```bash
 hugo server -D
 ```
-il sito sarà disponibile sull'URL [http://localhost:1313/](http://localhost:1313/)
+Il sito sarà disponibile sull'URL [http://localhost:1313/](http://localhost:1313/)
 
 {{< buymecoffee >}}
